@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CommandeInterfaceController">
+   <children>
+      <VBox layoutX="20.0" layoutY="26.0" prefHeight="348.0" prefWidth="209.0" spacing="10.0">
+         <children>
+            <TextField fx:id="id_commande" promptText="id_commande" />
+            <TextField fx:id="id_utilisateur" promptText="id_utilisateur" />
+            <TextField fx:id="id_produit" promptText="id_produit" />
+            <DatePicker fx:id="date" prefHeight="25.0" prefWidth="213.0" promptText="date" />
+            <TextField fx:id="role" promptText="role" />
+            <TextField fx:id="status" promptText="status" />
+            <Button fx:id="Ajouter" mnemonicParsing="false" onAction="#Ajouter" text="Ajouter" />
+            <Button fx:id="Modifier" mnemonicParsing="false" onAction="#Modifier" text="Modifier" />
+            <Button fx:id="Supprimer" mnemonicParsing="false" onAction="#Supprimer" prefHeight="25.0" prefWidth="74.0" text="Supprimer" />
+            <Button fx:id="Afficher" mnemonicParsing="false" onAction="#Afficher" prefHeight="25.0" prefWidth="74.0" text="Afficher" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableview" layoutX="239.0" layoutY="26.0" prefHeight="361.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="idCommandeCol" prefWidth="83.0" text="id_commande" />
+          <TableColumn fx:id="idUtilisateurCol" text="id_utilisateur" />
+            <TableColumn fx:id="idProduitCol" prefWidth="79.0" text="id_produit" />
+            <TableColumn fx:id="idDateCol" prefWidth="71.0" text="date" />
+            <TableColumn fx:id="idRoleCol" prefWidth="68.0" text="role" />
+            <TableColumn fx:id="idStatusCol" prefWidth="69.0" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

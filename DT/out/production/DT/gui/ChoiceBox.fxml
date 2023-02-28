@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ChoiceBox1Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="133.0">
+         <children>
+            <Pane prefHeight="500.0" prefWidth="180.0" style="-fx-background-color: c7eafd;">
+               <children>
+                  <Label layoutX="19.0" layoutY="106.0" text="Amira Ben Henda">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="83.0" fitWidth="103.0" layoutX="37.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/328314069_578930583780751_5464565016361633042_n%20(1).jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="21.0" layoutY="172.0" mnemonicParsing="false" text="Profil" />
+                  <Button layoutX="21.0" layoutY="220.0" mnemonicParsing="false" text="Chat" />
+                  <Button layoutX="20.0" layoutY="270.0" mnemonicParsing="false" text="Calendar" />
+                  <Button layoutX="21.0" layoutY="318.0" mnemonicParsing="false" text="Liste des commandes" />
+                  <Button layoutX="21.0" layoutY="366.0" mnemonicParsing="false" text="Settings" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="201.0" layoutY="41.0" text="Chat">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField floatText="Recherche" layoutX="201.0" layoutY="70.0" prefHeight="41.0" prefWidth="286.0" />
+      <Pane layoutX="201.0" layoutY="125.0" prefHeight="66.0" prefWidth="286.0" style="-fx-background-color: #f1f3f4;">
+         <children>
+            <Circle fill="#616568" layoutX="38.0" layoutY="33.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="69.0" layoutY="10.0" text="Rania Brahmi " />
+            <Label layoutX="69.0" layoutY="33.0" text="Je suis interressée par cet article" />
+            <Circle fill="#ff2929" layoutX="274.0" layoutY="15.0" radius="10.0" stroke="#ff2929" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="270.0" layoutY="6.0" text="3" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="201.0" layoutY="203.0" prefHeight="66.0" prefWidth="286.0" style="-fx-background-color: #f1f3f4;">
+         <children>
+            <Circle fill="#616568" layoutX="38.0" layoutY="33.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="69.0" layoutY="10.0" text="Wiem Ben Ali" />
+            <Label layoutX="69.0" layoutY="33.0" text="Je suis interressée par cet article" />
+            <Circle fill="#ff2929" layoutX="274.0" layoutY="15.0" radius="10.0" stroke="#ff2929" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="270.0" layoutY="6.0" text="6" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="201.0" layoutY="283.0" prefHeight="66.0" prefWidth="286.0" style="-fx-background-color: #f1f3f4;">
+         <children>
+            <Circle fill="#616568" layoutX="38.0" layoutY="33.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="69.0" layoutY="10.0" text="Eya Labidi" />
+            <Label layoutX="70.0" layoutY="33.0" text="Je suis interressée par cet article" />
+            <Circle fill="#ff2929" layoutX="274.0" layoutY="15.0" radius="10.0" stroke="#ff2929" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="270.0" layoutY="6.0" text="2" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="201.0" layoutY="362.0" prefHeight="66.0" prefWidth="286.0" style="-fx-background-color: #f1f3f4;">
+         <children>
+            <Circle fill="#616568" layoutX="38.0" layoutY="33.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="69.0" layoutY="10.0" text="Emna Khiari" />
+            <Label layoutX="69.0" layoutY="33.0" text="Je suis interressée par cet article" />
+            <Circle fill="#ff2929" layoutX="274.0" layoutY="15.0" radius="10.0" stroke="#ff2929" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="270.0" layoutY="6.0" text="1" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="514.0" layoutY="41.0" text="Discussion ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="75.0" text="Rania Brahmi ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="185.0" layoutX="594.0" layoutY="106.0" startX="-77.0" />
+      <Circle fill="#616568" layoutX="527.0" layoutY="202.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="32.0" layoutX="547.0" layoutY="186.0" stroke="#f1f3f4" strokeType="INSIDE" width="151.0" />
+      <Label layoutX="551.0" layoutY="193.0" text="Oui, il est encore dispo" />
+      <Circle fill="#616568" layoutX="766.0" layoutY="146.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="32.0" layoutX="519.0" layoutY="360.0" stroke="#f1f3f4" strokeType="INSIDE" width="115.0" />
+      <Circle fill="#616568" layoutX="766.0" layoutY="258.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="32.0" layoutX="602.0" layoutY="242.0" stroke="#f1f3f4" strokeType="INSIDE" width="141.0" />
+      <Label layoutX="613.0" layoutY="249.0" text="C'est le dernier prix ?" />
+      <Label layoutX="523.0" layoutY="367.0" text="On peux négocier" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="32.0" layoutX="642.0" layoutY="360.0" stroke="#f1f3f4" strokeType="INSIDE" width="103.0" />
+      <Label layoutX="646.0" layoutY="367.0" text="Oui, dernier prix" />
+      <Label layoutX="519.0" layoutY="339.0" text="Suggestion" textFill="#0000005c">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField floatText="Ecrire un message" layoutX="517.0" layoutY="390.0" prefHeight="26.0" prefWidth="263.0" />
+      <Circle fill="#616568" layoutX="532.0" layoutY="297.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="25.0" layoutX="554.0" layoutY="284.0" stroke="#f1f3f4" strokeType="INSIDE" width="41.0" />
+      <Circle fill="#616568" layoutX="562.0" layoutY="296.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#616568" layoutX="582.0" layoutY="296.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#616568" layoutX="572.0" layoutY="296.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f3f4" height="32.0" layoutX="546.0" layoutY="130.0" stroke="#f1f3f4" strokeType="INSIDE" width="196.0" />
+      <Label layoutX="549.0" layoutY="137.0" text="Je suis interressé par cet article" />
+      <Circle fill="#67ff73" layoutX="629.0" layoutY="88.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ChoiceBox fx:id="ChoiceBox" layoutX="673.0" layoutY="71.0" prefHeight="26.0" prefWidth="105.0" />
+      <ScrollBar layoutX="783.0" layoutY="105.0" orientation="VERTICAL" prefHeight="322.0" prefWidth="8.0" />
+      <Button layoutX="660.0" layoutY="443.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="123.0" text="Annuler" />
+      <Button layoutX="518.0" layoutY="443.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" text="Confimer" />
+   </children>
+</AnchorPane>

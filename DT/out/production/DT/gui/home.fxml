@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="nombreProduit" prefHeight="700.0" prefWidth="1330.0" style="-fx-background-color: FFFFF; -fx-border-radius: 60px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.HomeController">
+   <children>
+      <AnchorPane layoutX="53.0" layoutY="20.0" prefHeight="661.0" prefWidth="139.0" style="-fx-background-color: EADCC2; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="118.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/325282026_1139290126735986_6598349645756885230_n.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="35.0" layoutY="306.0" mnemonicParsing="false" onAction="#messages" text="message" />
+            <Button layoutX="35.0" layoutY="367.0" mnemonicParsing="false" onAction="#parametre" prefHeight="25.0" prefWidth="71.0" text="parametre" />
+            <Label fx:id="idt" cache="true" layoutX="101.0" layoutY="28.0" text="id" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="851.0" layoutY="7.0" prefHeight="681.0" prefWidth="514.0" style="-fx-background-color: ffff;">
+         <children>
+            <LineChart layoutX="14.0" layoutY="228.0" prefHeight="400.0" prefWidth="461.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <AnchorPane layoutX="59.0" layoutY="87.0" prefHeight="107.0" prefWidth="200.0" style="-fx-background-color: EAE8E2; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="NombreProduit" layoutX="20.0" layoutY="32.0" prefHeight="41.0" prefWidth="161.0" style="-fx-font-size: 30px;" text="11 Porduits" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="277.0" layoutY="87.0" prefHeight="107.0" prefWidth="200.0" style="-fx-background-color: EAE8E2; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="note" layoutX="20.0" layoutY="14.0" prefHeight="67.0" prefWidth="161.0" style="-fx-font-size: 30px;" text="Note : 60 %" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="59.0" layoutY="205.0" text="Statistique">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="49.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="profil" fitHeight="30.0" fitWidth="29.0" layoutX="451.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/woman.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="notifif" fitHeight="21.0" fitWidth="21.0" layoutX="393.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/notification.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="chercher" layoutX="96.0" layoutY="22.0" prefHeight="26.0" prefWidth="270.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imageUser" fitHeight="146.0" fitWidth="139.0" layoutX="591.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/328681271_859179325163890_7595227694796249094_n.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="NomUser" layoutX="246.0" layoutY="56.0" prefHeight="45.0" prefWidth="359.0" style="-fx-font-size: 30px;" text="Hello Rania !" />
+      <Label layoutX="252.0" layoutY="89.0" prefHeight="41.0" prefWidth="139.0" text="it good to see u again" />
+      <AnchorPane layoutX="234.0" layoutY="163.0" prefHeight="107.0" prefWidth="498.0" style="-fx-background-color: EAE8E2; -fx-background-radius: 20px;">
+         <children>
+            <AnchorPane layoutX="24.0" layoutY="10.0" prefHeight="87.0" prefWidth="87.0" style="-fx-background-color: FFFF; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="57.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/pin-point.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="Adresse" layoutX="131.0" layoutY="25.0" prefHeight="18.0" prefWidth="87.0" text="Tunisie , tunis" />
+            <Label fx:id="Numero" layoutX="131.0" layoutY="54.0" prefHeight="18.0" prefWidth="200.0" text="Num : +(216) xx xxx xxx" />
+            <Button layoutX="382.0" layoutY="27.0" mnemonicParsing="false" onAction="#consulterDonnee" style="-fx-background-color: E8D394;" text="Consulter" />
+            <Button layoutX="382.0" layoutY="60.0" mnemonicParsing="false" onAction="#ModifierDonnee" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: E8D394;" text="Modifier" />
+         </children>
+      </AnchorPane>
+      <ScrollBar layoutX="828.0" layoutY="315.0" orientation="VERTICAL" prefHeight="315.0" prefWidth="11.0" />
+      <AnchorPane layoutX="234.0" layoutY="294.0" prefHeight="400.0" prefWidth="498.0" style="-fx-background-radius: 20px; -fx-border-color: EAE8E2; -fx-background-color: FFFF;">
+         <children>
+            <Label layoutX="54.0" layoutY="35.0" prefHeight="57.0" prefWidth="124.0" text="Nom et prenom" />
+            <Label layoutX="54.0" layoutY="102.0" text="AdresseEmail" />
+            <Label layoutX="54.0" layoutY="144.0" text="Type" />
+            <Label layoutX="53.0" layoutY="183.0" text="nombreProduitAchetes" />
+            <Label layoutX="53.0" layoutY="222.0" text="nombreProduitPublier" />
+            <Label layoutX="53.0" layoutY="269.0" text="nombreProduitVendus" />
+            <Label fx:id="nom" layoutX="279.0" layoutY="55.0" text="Label" />
+            <Label fx:id="mail" layoutX="279.0" layoutY="102.0" text="Label" />
+            <Label fx:id="type" layoutX="279.0" layoutY="144.0" text="Label" />
+            <Label fx:id="nombreProduitAchetes" layoutX="279.0" layoutY="183.0" text="Label" />
+            <Label fx:id="nombreProduitPublier" layoutX="279.0" layoutY="222.0" text="Label" />
+            <Label fx:id="nombreProduitVendus" layoutX="279.0" layoutY="269.0" text="Label" />
+            <Label layoutX="45.0" layoutY="324.0" prefHeight="17.0" prefWidth="179.0" text="les produits Echangés/Achetés" />
+            <Button fx:id="consulterEchange" layoutX="267.0" layoutY="320.0" mnemonicParsing="false" onAction="#consulter" style="-fx-border-color: E8D394; -fx-background-color: E8D394;" text="consulter la liste des produits" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
