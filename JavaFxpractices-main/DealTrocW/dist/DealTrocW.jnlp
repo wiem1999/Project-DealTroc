@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DealTrocW.jnlp">
+  <information>
+    <title>DealTrocW</title>
+    <vendor>ASUS</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DealTrocW.jar" size="3435744" download="eager" />
+    <jar href="lib\core-3.3.0.jar" size="541078" download="eager" />
+    <jar href="lib\javase-3.3.0.jar" size="41451" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.23.jar" size="2415211" download="eager" />
+    <jar href="lib\protobuf-java-3.11.4.jar" size="1660960" download="eager" />
+    <jar href="lib\twilio-7.0.0-jar-with-dependencies.jar" size="6928990" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DealTrocW" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dealtrocw.DealTrocW"  name="DealTrocW" />
+  <update check="always"/>
+</jnlp>

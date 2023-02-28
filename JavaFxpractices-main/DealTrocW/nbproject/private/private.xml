@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Entities/Produit.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Api/GenerateQRCode.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Interfaces/InterfaceFavoris.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/ModifierGUIController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/ProdGUIController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/ProdGUI.fxml</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/DisplayProducts.fxml</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Interfaces/InterfaceProduit.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/DealTrocW.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Entities/favoris.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/ModifierGUI.fxml</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Services/FavorisService.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/FavorisFXMLController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Api/sendSMS.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/Services/ProduitService.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/DealTrocW/src/dealtrocw/DisplayProductsController.java</file>
+        </group>
+    </open-files>
+</project-private>

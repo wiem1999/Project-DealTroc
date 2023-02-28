@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+.primary-color{
+   -fx-background-color: #f4f5f9;  
+}
+
+.rect-round{
+    -fx-background-radius:10;
+}
+
+
+.rect-round1{
+    -fx-background-radius:10;
+}
+.selected{
+    -fx-background-color: #ead1b7;
+}
+
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+}
