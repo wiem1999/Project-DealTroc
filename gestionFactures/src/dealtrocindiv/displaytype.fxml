@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="671.0" style="-fx-background-color: EADCC2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dealtrocindiv.DisplaytypeController">
+    <children>
+        <TableView fx:id="tableTypes" layoutX="71.0" layoutY="143.0" prefHeight="285.0" prefWidth="552.0" style="-fx-background-radius: 15px;">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="141.0" text="id_type_facture" />
+                <TableColumn fx:id="nom" prefWidth="132.0" text="nom" />
+                <TableColumn fx:id="des" prefWidth="278.0" text="description" />
+            </columns>
+        </TableView>
+        <Text fill="#b26643" layoutX="186.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les types des factures">
+            <font>
+                <Font name="Californian FB" size="34.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="logo" fitHeight="71.0" fitWidth="159.0" layoutX="519.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="update" fitHeight="30.0" fitWidth="27.0" layoutX="85.0" layoutY="105.0" onMouseClicked="#update" pickOnBounds="true" preserveRatio="true">
+           <image>
+                <Image url="@../dealtrocindiv/images/update.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="delete" fitHeight="30.0" fitWidth="37.0" layoutX="125.0" layoutY="105.0" onMouseClicked="#delete" pickOnBounds="true" preserveRatio="true">
+         <image>
+                <Image url="@../dealtrocindiv/images/delete.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="meloul" fitHeight="41.0" fitWidth="46.0" layoutX="25.0" layoutY="25.0" onMouseClicked="#actualiser2" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../dealtrocindiv/images/loading.png" />
+            </image>
+        </ImageView>
+      
+    </children>
+</AnchorPane>
