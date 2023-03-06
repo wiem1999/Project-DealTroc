@@ -23,6 +23,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -62,67 +64,84 @@ public class FavorisFXMLController implements Initializable {
    
     @FXML
     private ImageView image_up;
-    @FXML
-    private TableView<favoris> tabF;
-    @FXML
-    private TableColumn<favoris, Integer> idcell1;
-    @FXML
-    private TableColumn<favoris, String> titrecell1;
-    @FXML
-    private TableColumn<favoris, String> desccell1;
-    @FXML
-    private TableColumn<favoris, String> catcell1;
-    @FXML
-    private TableColumn<favoris, Integer> prixcell1;
    
     FavorisService ps = new FavorisService();
+    @FXML
+    private ListView<favoris> listF;
 
     
     @Override
     public void initialize(URL url, ResourceBundle rb)  {
         // TODO
         
-        List<favoris> lp = ps.ConsulterlistFavoris();
+        List<favoris> lf = ps.ConsulterlistFavoris();
         
-        ObservableList<favoris> data1= FXCollections.observableArrayList(lp);
+        ObservableList<favoris> data1= FXCollections.observableArrayList(lf);
 
-        idcell1.setCellValueFactory(new PropertyValueFactory<>("idf"));
-        titrecell1.setCellValueFactory(new PropertyValueFactory<>("titre"));
-        desccell1.setCellValueFactory(new PropertyValueFactory<>("description"));
-        catcell1.setCellValueFactory(new PropertyValueFactory<>("categorie"));
-        prixcell1.setCellValueFactory(new PropertyValueFactory<>("prix"));
+        listF.setItems(data1);
+        
+listF.setCellFactory(lv -> new ListCell<favoris>() {
+    @Override
+    protected void updateItem(favoris item, boolean empty) {
+        super.updateItem(item, empty);
+        if (empty || item == null) {
+            setText(null);
+        } else {
+            setText(item.getFtitre());
+        }
+    }
+});
+listF.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+    if (newSelection != null) {
+        Lt.setText(newSelection.getFtitre());
+        Ld.setText(newSelection.getFdescription());
+        Lc.setText(newSelection.getFcategorie());
+        Lp.setText(String.valueOf(newSelection.getFprix()));
+        File file = new File(newSelection.getFurl());
+        Image image = new Image(file.toURI().toString());
+        image_up.setImage(image);
+    }
+});
+        
+        
+     //   idcell1.setCellValueFactory(new PropertyValueFactory<>("idf"));
+      //  titrecell1.setCellValueFactory(new PropertyValueFactory<>("titre"));
+       // desccell1.setCellValueFactory(new PropertyValueFactory<>("description"));
+        //catcell1.setCellValueFactory(new PropertyValueFactory<>("categorie"));
+        //prixcell1.setCellValueFactory(new PropertyValueFactory<>("prix"));
 
-        tabF.setItems(data1);
+       // tabF.setItems(data1);
         
-        
-        tabF.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-        if (newSelection != null) {
+  
+   //     tabF.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+    //    if (newSelection != null) {
             // Update the labels and image view with the selected item's details
-            Lt.setText(newSelection.getFtitre());
-            Ld.setText(newSelection.getFdescription());
-            Lc.setText(newSelection.getFcategorie());
-            Lp.setText(String.valueOf(newSelection.getFprix()));
-            File file = new File(newSelection.getFurl());
-            Image image = new Image(file.toURI().toString());
-            image_up.setImage(image);
+    //        Lt.setText(newSelection.getFtitre());
+     //       Ld.setText(newSelection.getFdescription());
+      //      Lc.setText(newSelection.getFcategorie());
+       //     Lp.setText(String.valueOf(newSelection.getFprix()));
+        //    File file = new File(newSelection.getFurl());
+         //   Image image = new Image(file.toURI().toString());
+          //  image_up.setImage(image);
         }
         
          // get the selected product from the table view
+
         
-    });}
+    
         
           public void loadF() {
     FavorisService ps = new FavorisService();
-    List<favoris> la = ps.ConsulterlistFavoris();
-    ObservableList<favoris> data = FXCollections.observableArrayList(la);
-    tabF.setItems(data);
+    List<favoris> lf = ps.ConsulterlistFavoris();
+    ObservableList<favoris> dataa = FXCollections.observableArrayList(lf);
+    listF.setItems(dataa);
 }
 
 
 
     @FXML
     private void supp(ActionEvent event) {
-        favoris C = tabF.getSelectionModel().getSelectedItem();
+        favoris C = listF.getSelectionModel().getSelectedItem();
     if (C == null) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Alerte");

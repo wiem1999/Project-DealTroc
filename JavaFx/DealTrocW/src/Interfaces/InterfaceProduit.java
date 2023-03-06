@@ -23,5 +23,6 @@ public interface InterfaceProduit {
     public List<Produit> ConsulterlistProduit();
     void ModifierProduit(Produit p); 
     void supprimer (Produit p);
+    public List<Produit> RandomSelectProduct(int n);
    
 }

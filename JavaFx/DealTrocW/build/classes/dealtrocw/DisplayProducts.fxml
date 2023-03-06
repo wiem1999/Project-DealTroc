@@ -132,7 +132,7 @@
          </image>
       </ImageView>
       <ImageView fx:id="image_update" fitHeight="100.0" fitWidth="149.0" layoutX="151.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" />
-      <TableView fx:id="tabProduit" layoutX="135.0" layoutY="182.0"  prefHeight="160.0" prefWidth="546.0">
+      <TableView fx:id="tabProduit" layoutX="135.0" layoutY="182.0" prefHeight="160.0" prefWidth="546.0">
         <columns>
           <TableColumn fx:id="idcell" prefWidth="75.0" text="IdProd" />
           <TableColumn fx:id="titrecell" prefWidth="75.0" text="Titre" />
@@ -149,6 +149,7 @@
       <Button fx:id="fav" layoutX="201.0" layoutY="558.0" mnemonicParsing="false" onAction="#addToFavoris" text="❤" />
       <Label fx:id="labelLikes" layoutX="172.0" layoutY="559.0" prefHeight="23.0" prefWidth="20.0" text="1" />
       <Button fx:id="bf" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" onAction="#DispFav" text="🛒" />
+      <Button layoutX="592.0" layoutY="437.0" mnemonicParsing="false" onAction="#ProductsOfTheDay" prefHeight="25.0" prefWidth="110.0" text="Nos Promotions" />
    </children> 
     <stylesheets>
         <URL value="@produitgui.css" />

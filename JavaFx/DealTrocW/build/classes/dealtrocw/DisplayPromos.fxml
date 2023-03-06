@@ -2,10 +2,8 @@
 
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -15,14 +13,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dealtrocw.DisplayProductsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dealtrocw.DisplayPromosController">
     <children>
       <ImageView fitHeight="142.0" fitWidth="131.0" layoutX="357.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../DealTroc/330890878_572235891257680_8299016335641653777_n.jpg" />
          </image>
       </ImageView>
-      <Label contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="110.0" layoutY="64.0" prefHeight="40.0" prefWidth="245.0" text="AvailableProducts">
+      <Label contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="110.0" layoutY="64.0" prefHeight="40.0" prefWidth="245.0" text="Promotions">
          <font>
             <Font size="28.0" />
          </font>
@@ -132,24 +130,8 @@
          </image>
       </ImageView>
       <ImageView fx:id="image_update" fitHeight="100.0" fitWidth="149.0" layoutX="151.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" />
-      <TableView fx:id="tabProduit" layoutX="135.0" layoutY="182.0" prefHeight="160.0" prefWidth="546.0">
-        <columns>
-          <TableColumn fx:id="idcell" prefWidth="75.0" text="IdProd" />
-          <TableColumn fx:id="titrecell" prefWidth="75.0" text="Titre" />
-            <TableColumn fx:id="desccell" prefWidth="146.0" text="description" />
-            <TableColumn fx:id="catcell" minWidth="0.0" prefWidth="117.0" text="Categorie" />
-            <TableColumn fx:id="prixcell" prefWidth="132.0" text="Prix" />
-        </columns>
-      </TableView>
       <ImageView fx:id="image_up" fitHeight="129.0" fitWidth="159.0" layoutX="135.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="Lt" layoutX="334.0" layoutY="375.0" prefHeight="17.0" prefWidth="110.0" text="Titre" />
-      <Label fx:id="Ld" layoutX="334.0" layoutY="413.0" prefHeight="17.0" prefWidth="110.0" text="Description" />
-      <Label fx:id="Lc" layoutX="335.0" layoutY="449.0" prefHeight="17.0" prefWidth="110.0" text="Categorie" />
-      <Label fx:id="Lp" layoutX="334.0" layoutY="495.0" prefHeight="17.0" prefWidth="110.0" text="Prix" />
-      <Button fx:id="fav" layoutX="201.0" layoutY="558.0" mnemonicParsing="false" onAction="#addToFavoris" text="❤" />
-      <Label fx:id="labelLikes" layoutX="172.0" layoutY="559.0" prefHeight="23.0" prefWidth="20.0" text="1" />
-      <Button fx:id="bf" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" onAction="#DispFav" text="🛒" />
-      <Button layoutX="592.0" layoutY="437.0" mnemonicParsing="false" onAction="#ProductsOfTheDay" prefHeight="25.0" prefWidth="110.0" text="Nos Promotions" />
+      <ListView fx:id="promoListView" layoutX="147.0" layoutY="183.0" prefHeight="200.0" prefWidth="537.0" />
    </children> 
     <stylesheets>
         <URL value="@produitgui.css" />

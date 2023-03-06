@@ -16,6 +16,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.effect.Effect;
 import javafx.scene.image.Image;
@@ -35,7 +36,7 @@ public class ProduitService implements Interfaces.InterfaceProduit{
     public void AjouterProduit(Produit p) {
 
 
-               String requete2 = "INSERT INTO Produit (url,Description,titre,Categorie,prix)"
+               String requete2 = "INSERT INTO produit (url,Description,titre,Categorie,prix)"
                        + "VALUES(?,?,?,?,?)";
               try{
                PreparedStatement pst = new MyConnection().getConn().prepareStatement(requete2);
@@ -147,6 +148,19 @@ try{
         System.out.println(e.getMessage());
     }
 }
+      public List<Produit> RandomSelectProduct(int n) {
+    List<Produit> products = this.ConsulterlistProduit();
+    List<Produit> selectedProducts = new ArrayList<>();
+    Random random = new Random();
+    int size = products.size();
+    for (int i = 0; i < n && i < size; i++) {
+        int index = random.nextInt(size - i);
+        selectedProducts.add(products.get(index));
+        products.set(index, products.get(size - i - 1));
+    }
+    return selectedProducts;
+}
+
     }
     
 

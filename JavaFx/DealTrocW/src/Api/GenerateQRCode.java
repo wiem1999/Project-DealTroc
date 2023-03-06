@@ -5,6 +5,7 @@
  */
 package Api;
 import Entities.Produit;
+import Entities.Promo;
 import java.io.File;  
 import java.io.IOException;  
 import java.util.HashMap;  
@@ -23,12 +24,12 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
  */
 public class GenerateQRCode {
     //static function that creates QR Code  
-public static void generateQRcode(Produit product, String path) throws WriterException, IOException {
+public static void generateQRcode(Promo promo, String path) throws WriterException, IOException {
     // create the data string to encode in the QR code
-    String data = product.getTitre()+ "\n"
-                + product.getDescription()+ "\n"
-                + "Price: " + product.getPrix()+ "\n"
-                + "Category: " + product.getCategorie();
+    String data = promo.getTitre()+ "\n"
+                + promo.getDescription()+ "\n"
+                + "Price: " + promo.getPrix()+ "\n"
+                + "Pourcentage: " + promo.getPourcentage();
     
     // set the QR code parameters
     int width = 300;

@@ -167,6 +167,12 @@ public class ProdGUIController implements Initializable {
 
                 ProduitService ps = new ProduitService();
                 ps.AjouterProduit(p);
+                  
+                                 loadP();
+
+
+                JOptionPane.showMessageDialog(null, "produit ajouté");
+
                              try {
     sendSMS sm = new sendSMS();
     sm.sendSMS(p);
@@ -174,27 +180,13 @@ public class ProdGUIController implements Initializable {
     // handle the exception here
     e.printStackTrace();
 }
-                
-
-                JOptionPane.showMessageDialog(null, "produit ajouté");
-  
-
-String path = "C:/Users/ASUS/Documents/qr/code.png";
-try{
-            GenerateQRCode.generateQRcode(p, path);
-            } catch (WriterException e) {
-    e.printStackTrace();
-}
                 //REDIRECTION
-                FXMLLoader loader = new FXMLLoader(getClass()
-                        .getResource("ProduitGUI.fxml"));
+               FXMLLoader loader = new FXMLLoader(getClass()
+                        .getResource("ProdGUI.fxml"));
                 Parent root = loader.load();
                 tftitre.getScene().setRoot(root);}
-                        loadP();
-                        
-                       
-
-        } catch (IOException ex) {
+                      ;                     
+                         } catch (IOException ex) {
             Logger.getLogger(ProdGUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -226,7 +218,7 @@ try{
            image_update.setImage(img);
            image_update.setFitHeight(150);
            image_update.setFitWidth(250);
-           image.setText(path);
+           btnUpload.setText(path);
 
         }
     }
